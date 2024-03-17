@@ -1,0 +1,17 @@
+version: '4.24'
+
+services:
+  laravel-11-example:
+    image: laravel-11-example:main
+    build:
+      context: ./
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./:/var/www
+    networks:
+      - laravel-11-example-net
+
+networks:
+  laravel-11-example-net:
+    driver: bridge
+    name: laravel-11-example-net
