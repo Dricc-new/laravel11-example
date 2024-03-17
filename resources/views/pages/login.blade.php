@@ -15,10 +15,17 @@
                     <label for="password" class="font-semibold">Password</label>
                     <input type="password" id="password" class="rounded bg-gray-50 border w-full p-2" />
                 </div>
-                
-                <div class="p-2 clas flex justify-end">
-                    <button type="submit"
-                        class="button-gradient">Submit</button>
+                <div class="p-2">
+                    <div class="flex justify-between items-center gap-10">
+                        <h3 class="font-semibold">Login with:</h3>
+                        <a href="#"><img src="{{asset('google.svg')}}" class="w-7" alt=""></a>
+                        <a href="#" class="text-3xl"><i class="fab fa-facebook text-blue-800"></i></a>
+                        <a href="#" class="text-3xl"><i class="fab fa-linkedin text-blue-500"></i></a>
+                    </div>
+                </div>
+                <div class="p-2 flex justify-between items-center">
+                    <a href="{{route('register')}}" class="text-blue-500 font-semibold">Register</a>
+                    <button type="submit" class="button-gradient">Submit</button>
                 </div>
             </form>
         </article>

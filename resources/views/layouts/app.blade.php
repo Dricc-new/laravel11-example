@@ -17,7 +17,7 @@
                 <ul class="flex gap-4 p-2 mx-4">
                     <li><a href="{{route('home')}}">Home</a></li>
                     <li><a href="{{route('tasks')}}">Tasks</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="{{route('about')}}">About</a></li>
                 </ul>
                 <div class="mx-4 p-2">
                     <a href="{{route('login')}}"> Login</a>

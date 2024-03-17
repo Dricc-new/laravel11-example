@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('pages.welcome');
 })->name('home');
 
+Route::get('/about', function () {
+    return view('pages.about');
+})->name('about');
+
 Route::prefix('/auth')->group(function () {
     Route::get('/login',function(){
         return view('pages.login');

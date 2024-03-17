@@ -24,14 +24,15 @@
                     <input type="password" id="confirmpassword" class="rounded bg-gray-50 border w-full p-2" />
                 </div>
                 <div class="p-2">
-                    <h3 class="font-semibold">Register with:</h3>
-                    <div class="flex justify-center gap-10">
-                        <a href="#" class="text-3xl"><i class="fab fa-google"></i></a>
+                    <div class="flex justify-between items-center gap-10">
+                        <h3 class="font-semibold">Register with:</h3>
+                        <a href="#"><img src="{{asset('google.svg')}}" class="w-7" alt=""></a>
                         <a href="#" class="text-3xl"><i class="fab fa-facebook text-blue-800"></i></a>
                         <a href="#" class="text-3xl"><i class="fab fa-linkedin text-blue-500"></i></a>
                     </div>
                 </div>
-                <div class="p-2 clas flex justify-end">
+                <div class="p-2 flex justify-between items-center">
+                    <a href="{{route('login')}}" class="text-blue-500 font-semibold">Login</a>
                     <button type="submit" class="button-gradient">Submit</button>
                 </div>
             </form>
