@@ -20,13 +20,13 @@ Route::prefix('/auth')->group(function () {
     })->name('register');
 });
 
-Route::prefix('/tasks')->name('tasks')->group(function () {
+Route::prefix('/posts')->name('posts')->group(function () {
 
     Route::get('/', function () {
-        return view('pages.tasks');
+        return view('pages.posts');
     });
 
     Route::get('/new', function () {
-        return view('pages.newtask');
+        return view('pages.newpost');
     })->name('-new');
 });

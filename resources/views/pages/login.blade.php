@@ -1,6 +1,6 @@
 @extends('layouts.auth')
 
-@section('title', 'new task')
+@section('title', 'new post')
 
 @section('content')
     <section class="flex justify-center py-12 p-4">

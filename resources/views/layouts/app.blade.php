@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css','resources/js/app.js'])
 
     <title>Laravel Example - @yield('title')</title>
 </head>
@@ -16,7 +16,7 @@
             <nav class="flex justify-between items-center">
                 <ul class="flex gap-4 p-2 mx-4">
                     <li><a href="{{route('home')}}">Home</a></li>
-                    <li><a href="{{route('tasks')}}">Tasks</a></li>
+                    <li><a href="{{route('posts')}}">posts</a></li>
                     <li><a href="{{route('about')}}">About</a></li>
                 </ul>
                 <div class="mx-4 p-2">
